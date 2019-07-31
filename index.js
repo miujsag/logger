@@ -1,7 +1,8 @@
-const {createError} = require('./lib/error')
+const {createLogMessage, logError, logInfo, stream} = require('./lib')
 
 module.exports = {
-  createError
+  createLogMessage,
+  logError,
+  logInfo,
+  stream
 }
-
-console.log(createError('create article', {site: '444', article: 'lolwut', category: 'fasz'}))
